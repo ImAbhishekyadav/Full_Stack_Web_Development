@@ -7,7 +7,7 @@ import About from './AboutComponent';
 import Contact from './ContactComponent'
 import DishDetail from './DishdetailComponent'
 import { Switch,Route, Redirect, withRouter } from 'react-router-dom';
-import {Connect} from 'react-redux';
+import {connect} from 'react-redux';
 
 const mapStateToProps = state => {
   return{
@@ -59,4 +59,4 @@ class Main extends Component{
 
 
 
-export default withRouter(Connect (mapStateToProps)(Main));
+export default withRouter(connect (mapStateToProps)(Main));
